@@ -1,10 +1,15 @@
-import UseStateComponent from "./components/UseStateComponent";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <div>
-      <h1>useState</h1>
-      <UseStateComponent />
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
