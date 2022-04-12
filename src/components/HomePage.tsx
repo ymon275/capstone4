@@ -6,20 +6,14 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Home() {
   return (
-    <>
+    <div className="mh-100 h-100">
       <Navbar />
-      <Container style={{width: "100%", height: "100%"}}>
         <Sidebar />
-        <Row id="main">
-          <Col xs={9}>
+        <Container fluid id="main">
             <Items />
-          </Col>
-          <Col>
             <AboutMe />
-          </Col>
-        </Row>
-      </Container>
-    </>
+        </Container>
+    </div>
   );
 }
 

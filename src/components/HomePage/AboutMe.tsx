@@ -2,7 +2,7 @@ import { Image } from "react-bootstrap";
 
 function AboutMe() {
   return (
-    <div className="aboutMe">
+    <div className="aboutMe w-25">
       <h1>About Me</h1>
       <Image src="" alt="Goat covered in flowers" rounded fluid />
       <p>

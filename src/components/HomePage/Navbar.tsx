@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import useAuth from "../../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
 
 export default function NavBar() {
@@ -28,6 +28,8 @@ export default function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/register">Sign Up</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
